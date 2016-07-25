@@ -31,20 +31,80 @@ section {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background:url(../imgs/body_bg.png);
+	background-size: auto;
 }
 
 #loader {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 200px;
-	height: 200px;
-	margin-top: -100px;
-	margin-left: -100px;
-	background: url(../imgs/loading.gif) no-repeat center center;
-	background-size: cover
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+	background: #00FFCC;
+	-webkit-animation:loading 1.2s infinite;
+	-moz-animation:loading 1.2s infinite;
+	-ms-animation:loading 1.2s infinite;
+	-o-animation:loading 1.2s infinite;
+	animation:loading 1.2s infinite;
 }
-
+@-webkit-keyframes loading {
+	0% {
+		-webkit-transform: perspective(200px)
+	}
+	50% {
+		-webkit-transform: perspective(200px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(200px) rotate(180deg)
+	}
+}
+@-moz-keyframes loading {
+	0% {
+		-moz-transform: perspective(200px)
+	}
+	50% {
+		-moz-transform: perspective(200px) rotateY(180deg)
+	}
+	100% {
+		-moz-transform: perspective(200px) rotate(180deg)
+	}
+}
+@-ms-keyframes loading {
+	0% {
+		-ms-transform: perspective(200px)
+	}
+	50% {
+		-ms-transform: perspective(200px) rotateY(180deg)
+	}
+	100% {
+		-ms-transform: perspective(200px) rotate(180deg)
+	}
+}
+@-o-keyframes loading {
+	0% {
+		-o-transform: perspective(200px)
+	}
+	50% {
+		-o-transform: perspective(200px) rotateY(180deg)
+	}
+	100% {
+		-o-transform: perspective(200px) rotate(180deg)
+	}
+}
+@keyframes loading {
+	0% {
+		transform: perspective(200px)
+	}
+	50% {
+		transform: perspective(200px) rotateY(180deg)
+	}
+	100% {
+		transform: perspective(200px) rotate(180deg)
+	}
+}
 section.index {
 	background:url(../imgs/index_bg.jpg) no-repeat center center;
 	background-attachment: fixed;
