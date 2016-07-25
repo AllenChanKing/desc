@@ -222,6 +222,7 @@ header .avatarbox {
 	width: auto;
 	height: auto;
 	margin-left: 10%;
+	cursor: pointer;
 }
 
 header .avatar {
