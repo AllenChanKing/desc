@@ -158,12 +158,18 @@ header {
 	box-sizing: border-box;
 }
 
+header .avatarbox {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin-left: 10%;
+}
+
 header .avatar {
 	position: relative;
 	display: inline-block;
 	width: 60px;
 	height: 60px;
-	margin-left: 10%;
 	border-radius: 50%;
 	border:3px solid #fff;
 	background: url(../imgs/avatar.jpg) no-repeat center center;
@@ -191,13 +197,13 @@ header .avatar:after {
 	-o-transition: all .5s;
 	transition: all .5s;
 }
-header .avatar:hover:before {
+header .avatarbox:hover .avatar:before {
 	top: 100%;
 }
-header .avatar:hover:after {
+header .avatarbox:hover .avatar:after {
 	top: -100%;
 }
-header .avatar:hover {
+header .avatarbox:hover .avatar{
 	border:3px solid #00CCFF;
 	box-shadow: 0 0 10px #00CCFF;
 }
