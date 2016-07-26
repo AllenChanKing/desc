@@ -79,7 +79,28 @@ section.index {
 	background-attachment: fixed;
 	background-size: cover;
 }
+section.index div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+section.index div p {
+	color: #fff;
+	letter-spacing:.05cm;/*单个字母间距*/
+}
+section.index div p.p2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 10px 0;
+	letter-spacing:.1cm;/*单个字母间距*/
 
+}
 section.index .scroll-down {
 	position: absolute;
 	display: inline-block;
