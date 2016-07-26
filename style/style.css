@@ -354,6 +354,15 @@ header nav  a.act:after {
 	overflow: hidden;
 	background: url(../imgs/qrcode.jpg) no-repeat center center;
 	background-size: cover;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+#basic_info .photo:hover {
+	border: 5px solid #00FF99;
+	box-shadow: 0 0 50px #00FF99;
 }
 .animated .photo {
 	-webkit-animation: downin 2s ease-out forwards;
@@ -480,6 +489,8 @@ header nav  a.act:after {
 #basic_info li div.left .iconfont,
 #basic_info li div.left span {
 	position: absolute;
+	font-size: 14px;
+	color: #555;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-ms-transition: all .5s;
