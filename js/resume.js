@@ -10,7 +10,7 @@ $(function(){
 	});
 
 	// 重新加载页面返回顶部
-	$("html,body").animate({scrollTop:0},500);
+	$("html,body").animate({scrollTop:0});
 
 	//js获取并且设置屏幕高度
 	$(".full-screen").height($(window).height());
