@@ -61,22 +61,11 @@ $(function(){
 });
 
 
-// $(window).scroll(function(){
-//     if(!$(".historybox #historyboxul").attr("class") || $(".historybox #historyboxul").attr("class").indexOf('animated')==-1){
-//         if(document.getElementById("historyboxul").getBoundingClientRect().top<=$(window).height()){
-//             var i=0;
-//             $(".historybox #historyboxul").addClass("animated");
-//             var interval=setInterval(function(){
-//                 $("div.historybox li.wow").removeClass("act");
-//                 var index=i%6;
-//                 $("div.historybox li.wow").eq(index).addClass("act");
-//                 if(i>=6){
-//                     $("div.historybox li.wow").removeClass("act");
-//                     clearInterval(interval);
-//                     i=0;
-//                 }
-//                 i++;
-//             },1600);
-//         }
-//     }
-// });
+$(window).scroll(function(){
+    if(!$(".container #basic_info").attr("class") || $(".container #basic_info").attr("class").indexOf('animated')==-1){
+        if(document.getElementById("basic_info").getBoundingClientRect().top<=$(window).height()){
+            var i=0;
+            $(".container #basic_info").addClass("animated");
+        }
+    }
+});
