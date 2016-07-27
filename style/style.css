@@ -23,9 +23,7 @@ a {
 section {
 	width: 100%;
 }
-.full-screen {
-	height: 1000px;
-}
+
 
 /*预加载动画*/
 #preloader {
