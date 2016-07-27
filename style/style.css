@@ -23,6 +23,9 @@ a {
 section {
 	width: 100%;
 }
+.full-screen {
+	height: 100%;
+}
 
 /*预加载动画*/
 #preloader {
@@ -92,13 +95,12 @@ section.index div {
 }
 section.index div p {
 	color: #fff;
-	letter-spacing:.05cm;/*单个字母间距*/
 }
 section.index div p.p2 {
 	font-size: 32px;
 	font-weight: bold;
 	margin: 10px 0;
-	letter-spacing:.1cm;/*单个字母间距*/
+	letter-spacing:.2cm;/*单个字母间距*/
 
 }
 section.index .scroll-down {
