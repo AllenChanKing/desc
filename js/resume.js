@@ -4,6 +4,8 @@ $(window).load(function() {
 });
 
 $(function(){
+	//js获取并且设置屏幕高度
+	$(".full-screen").height($(window).height());
 	// 点击返回顶部按钮返回顶部
 	$("aside li.back2top").on("click",function(){
 		$("html,body").animate({scrollTop:0},500);
@@ -11,9 +13,6 @@ $(function(){
 
 	// 重新加载页面返回顶部
 	$("html,body").animate({scrollTop:0});
-
-	//js获取并且设置屏幕高度
-	$(".full-screen").height($(window).height());
 
 	//分类数组
 	var secTop = new Array();
