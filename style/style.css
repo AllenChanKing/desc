@@ -24,9 +24,9 @@ a {
 section {
 	width: 100%;
 }
-/*.full-screen {
-	min-height: 1000px;
-}*/
+.full-screen {
+	display: none;
+}
 
 /*预加载动画*/
 #preloader {
