@@ -5,7 +5,9 @@ $(window).load(function() {
 
 $(function(){
 	//js获取并且设置屏幕高度
-	$(".full-screen").height($(window).height());
+	$(".full-screen")
+	.height($(window).height())
+	.css({display:"block"});
 	// 点击返回顶部按钮返回顶部
 	$("aside li.back2top").on("click",function(){
 		$("html,body").animate({scrollTop:0},500);

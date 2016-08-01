@@ -25,7 +25,7 @@ section {
 	width: 100%;
 }
 .full-screen {
-	min-height: 1000px;
+	display: none;
 }
 
 /*预加载动画*/
